@@ -1,0 +1,16 @@
+#JAGS file JAGS.bug”
+model{
+	for (i in 1:N){
+		media[i] <- a[(id[i])]+b*x[i]
+		y[i]~dnorm(media[i],precy)
+	}
+
+	for (i in 1:K){
+		a[i]~dnorm(gamma,preca)
+	}
+  
+	b ~ dnorm(0,1/100)
+	precy ~ dgamma(0.1,0.1)
+	gamma ~ dnorm(0, 1/100)
+	preca ~ dgamma(0.1,0.1)
+}
