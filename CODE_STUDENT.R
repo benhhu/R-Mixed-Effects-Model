@@ -1,4 +1,4 @@
-setwd('//file.phhp.ufl.edu/home/huihu/files/Book Chapter/AdvancedMethodsForAnalyzingEpidemiologicalData/data') #change the path
+setwd('//file.phhp.ufl.edu/home/huihu/files/MixedEffectModel/') #change the path
 
 #########################################
 #install the lme4 and arm packages first#
